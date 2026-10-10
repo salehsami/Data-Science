@@ -1,0 +1,15 @@
+IMPORTANT: Verify that this exactly matches the ACCEPTED goal in Odin before using it in TaskRecorder or the Goal-only opening document. If the accepted goal differs, use the approved text verbatim.
+
+As a data scientist supporting a subscription-based digital platform, I need to investigate whether automated or abnormal user sessions are artificially inflating the company's engagement metrics.
+
+I will begin with a synthetic SQLite database containing timestamped customer activity, session identifiers, event types, and behavioral patterns. Some sessions will contain deliberately unusual timing or activity, but their classifications will not be provided to the analyst.
+
+Using DBeaver, I will examine the event data, validate session-level aggregations, and investigate activity frequency and timing distributions.
+
+In Visual Studio Code, I will use Python and pandas to engineer session-level behavioral features and apply Isolation Forest to identify potentially automated or otherwise abnormal sessions. I will compare the model's findings against interpretable behavioral rules, investigate disagreements, and calculate how excluding flagged activity changes reported engagement metrics.
+
+Finally, I will open a locally generated HTML investigation dashboard in Firefox to review anomaly rankings, visualize behavioral differences, and compare original versus adjusted engagement KPIs.
+
+The completed deliverables will include a session anomaly scorecard, a browser-viewable investigation dashboard, and a concise analytical report explaining suspicious patterns, their estimated effect on engagement reporting, false-positive limitations, and recommended follow-up actions.
+
+This is an unsupervised behavioral anomaly investigation rather than a binary conversion experiment or a supervised classification exercise.
