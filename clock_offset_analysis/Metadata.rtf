@@ -1,0 +1,21 @@
+{\rtf1\ansi\ansicpg1252\deff0\uc1{\fonttbl{\f0 Arial;}}\paperw11907\paperh16840\margl1440\margr1440\margt1080\margb1080\f0\fs22
+\b Topology:\b0\par
+Firefox (LOOKUP) -> DBeaver (LOOKUP) -> Firefox (LOOKUP) -> Firefox (CREATE) -> DBeaver (LOOKUP) -> Visual Studio Code (LOOKUP) -> Visual Studio Code (CREATE) -> Visual Studio Code (MODIFY)\par\par
+\b Request:\b0\par
+As a data scientist supporting a cold-storage operations team, I will investigate disagreement between two colocated temperature sensors and assess whether a consistent clock offset explains their mismatched readings.\par
+\par
+In DBeaver, I will inspect synthetic sensor readings for duplicate timestamps, missing samples, sampling intervals and overlapping coverage. In Firefox, I will use a prepared local analysis dashboard to compare the sensor series at their original timestamps, then evaluate candidate clock offsets from minus ten to plus ten minutes in thirty-second increments.\par
+\par
+I will estimate the offset using the first three hours of readings, examining correlation, temperature differences and ambiguity between candidate offsets. I will then apply the selected offset unchanged to a separate final hour and assess whether agreement improves.\par
+\par
+In Visual Studio Code, I will save verification queries, inspect exported aligned readings and complete a diagnostic memo recommending whether a timestamp correction is supported, requires further investigation or should be rejected.\par\par
+\b Task Description:\b0\par
+1. In DBeaver, audit synthetic readings for source counts, duplicate timestamps, required fields, numeric validity, 30-second sampling, timestamp coverage and phase boundaries.\par
+2. In Firefox, inspect original estimation-window temperature series and compare 41 candidate corrections from -600 to +600 seconds in 30-second increments using identical common-interior reference timestamps.\par
+3. In Firefox, compare leading and competing estimation correlations, mean absolute errors and signed differences; select an offset using estimation evidence and inspect original versus proposed timestamp pairings.\par
+4. In Firefox, freeze the selected offset before revealing validation and evaluate the unchanged correction on a separate final-hour window without cross-window pairs or retuning.\par
+5. In Firefox, save candidate-offset scores, phase metrics, aligned pairs, a proposed corrected B series preserving original timestamps and temperatures, and an analysis summary; persist analysis tables for SQL verification.\par
+6. In DBeaver, independently verify offset ranking using estimation-only SQL, reconstruct phase metrics from raw readings, check correction sign and window separation, and confirm exported pair integrity and unchanged source counts.\par
+7. In Visual Studio Code, inspect exported CSV and JSON artifacts and retain the complete SQL verification script.\par
+8. In Visual Studio Code, complete and review the diagnostic recommendation, distinguishing evidence for temporal alignment from residual temperature bias, calibration uncertainty, sensor-response alternatives and cold-storage safety conclusions.\par\par
+}

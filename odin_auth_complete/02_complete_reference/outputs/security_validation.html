@@ -1,0 +1,14 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<title>Customer API — Authorization Verification</title>
+<style>body{font-family:system-ui,Arial,sans-serif;max-width:880px;margin:45px auto;padding:0 20px;color:#243044}
+h1{margin-bottom:2px}.small{color:#64748b}.status{font-weight:700;padding:12px;background:#eff6ff;border-radius:8px}
+pre{white-space:pre-wrap;background:#f1f5f9;padding:18px;border-radius:8px;overflow-wrap:anywhere}
+@media print{body{margin:15mm auto}}</style></head><body>
+<h1>Customer API Authorization — Validation Report</h1>
+<p class='small'>Generated: 2026-10-11T12:35:52.432072+00:00</p>
+<p>Scope: Synthetic support-record API. Server-side record ownership is evaluated after bearer-token authentication.</p>
+<p class='status'>Automated verification result: PASS</p>
+<h2>Regression test output</h2><pre>.........                                                                [100%]
+9 passed in 0.39s</pre>
+<h2>Policy validated</h2><p>Owned record: 200; cross-agent record: 403; missing/invalid token: 401; nonexistent record: 404.</p>
+<h2>Remaining limitations</h2><ul><li>Demo tokens are static and stored in SQLite; use a real identity provider in production.</li><li>Only the customer-read endpoint is in scope.</li><li>Object existence is disclosed by 403 for an unauthorized existing record; 404 masking is an alternative policy.</li></ul></body></html>
