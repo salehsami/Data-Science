@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-10-11T12:35:52.432072+00:00",
+  "generated_utc": "2026-10-11T13:21:49.840212+00:00",
   "verification_command": "-m pytest tests/test_authorization.py -q",
   "exit_code": 0,
   "status": "PASS",
-  "test_output": ".........                                                                [100%]\n9 passed in 0.39s",
+  "test_output": ".........                                                                [100%]\n9 passed in 0.30s",
   "scope": "Synthetic local customer API; no real identities",
   "remaining_limitations": [
     "Demo tokens are static and stored in SQLite; use a real identity provider in production.",
