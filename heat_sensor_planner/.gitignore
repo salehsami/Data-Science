@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+*.pyc
+Deliverables.zip
+outputs/*
+!outputs/.gitkeep
